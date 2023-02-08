@@ -1,3 +1,7 @@
+body{
+    background-color: #000 !important;
+}
+
 .logo{
     height: 100%;
 }
@@ -6,6 +10,69 @@ header{
     height: 10vh;
 }
 
-input, select, textarea{
-     border-radius: 50px !important;
+.formulario{
+    height: 90vh;
+    background: linear-gradient(0.5turn, #000, #0b3a5c, #000);
 }
+
+footer{
+    height: 20vh;
+}
+
+input:not(.form-check-input), select{
+     border-radius: 30px !important;
+     background-color: #4c6577 !important;
+     border: transparent !important;
+    color: #fff !important;
+}
+
+textarea{
+    border-radius: 30px !important;
+    resize: none !important;
+    background-color: #4c6577 !important;
+    border: transparent !important;
+}
+
+a{
+    text-decoration: none !important;
+    color: #fff !important;
+}
+
+a:hover{
+    color: #009bbc !important;
+}
+
+a:last-child{
+    color: #009bbc !important;
+    border-bottom: #009bbc !important;
+}
+
+.underline {
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .underline::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in;
+  }
+  
+  .underline:hover::after {
+    color: #009bbc;
+    transform: scaleX(1);
+  }
+  
+  .underline.left:hover::after{
+    transform-origin: left;
+  }
+
+  hr{
+    color: #009bbc !important;
+  }
