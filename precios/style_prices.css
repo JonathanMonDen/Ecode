@@ -1,0 +1,28 @@
+.contenedor{
+    background-color: #000000;
+}
+img{
+    width: 300px;
+}
+
+.hola{
+    background-color: black;
+}
+
+.pagina1{
+    height: 100vh;
+}
+
+.start{
+    font-size: 12vh;
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+.azul{
+    color: #0071BC;
+    background: none;
+}
