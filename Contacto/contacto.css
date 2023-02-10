@@ -115,4 +115,8 @@ a:last-child{
     nav{
       display: flex;
     }
+
+    select{
+      width: 60vw !important;
+    }
   }
