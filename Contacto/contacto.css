@@ -83,6 +83,10 @@ a:last-child{
     font-size: 2em;
   }
 
+  nav{
+    display: none;
+  }
+
   @media (min-width : 767px){
     i{
         font-size: 1em;
@@ -95,9 +99,20 @@ a:last-child{
         display: none !important;
     }
     footer{
-        display: none !important;
+      flex-direction: column;
+    }
+    footer a{
+      display: none;
+    }
+    footer div i{
+      column-gap: 5vw !important;
+      padding: 2vh !important;
+      padding-bottom: 5vh !important;
     }
     hr{
-        display: none;
+        margin-top: 10vh !important;
+    }
+    nav{
+      display: flex;
     }
   }
