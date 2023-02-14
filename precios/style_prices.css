@@ -9,8 +9,64 @@ img{
     background-color: black;
 }
 
-.pagina1{
+#pagina1{
     height: 100vh;
+}
+
+#pagina2{
+    height: 50vh;
+    background: linear-gradient(0.5turn, #000,#0b3a5c, #000);
+}
+
+#texto_pagina1{
+    height: 90vh;
+    padding: 20%;
+}
+
+#fondo1{
+    height: 90vh;
+    background: linear-gradient(0.5turn, #000, #0b3a5c, #000);
+}
+
+#precios{
+    height: 400px;
+    border-radius: 35px;
+    border-style: solid;
+}
+
+#precios_popular{
+    height: 400px;
+    border-radius: 35px;
+    border-color: #0071BC;
+    border-style: solid;
+}
+
+#popular{
+    border-radius: 35px;
+    width: 7%;
+    background-color: #0071BC;
+    margin-top: -15px;
+
+}
+
+#primer_texto{
+    margin-top: 6vh;
+}
+
+#texto_final{
+    margin-top: 80px;
+    margin-left: 200px;
+}
+
+#imagen_final{
+    margin-top: 120px;
+    margin-right: 200px;
+}
+
+.mes{
+    background-color: white;
+    color: rgb(160, 158, 158);
+    font-size: 70%;
 }
 
 .start{
@@ -23,8 +79,27 @@ img{
     color: white;
 }
 
-button{
+.boton_precios{
+    width: 80%;
+    height: 12%;
+    border-radius: 35px;
+    border-style: none;
     background-color: white;
+    color: #0071BC;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+
+.boton_info{
+    width: 30%;
+    height: 13%;
+    border-radius: 35px;
+    background-color: #0071BC;
+    color: white;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
 
 p{
@@ -32,6 +107,6 @@ p{
 }
 
 .azul{
-    color: #0071BC;
+    color: #0097bc;
     background: none;
 }
