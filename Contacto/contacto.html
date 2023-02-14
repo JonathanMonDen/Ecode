@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="contacto.css" />
 
     <script src="https://kit.fontawesome.com/ad4441e58a.js" crossorigin="anonymous"></script>
+    
+    <script src="/js/functions.js"></script>
+    <script src="/js/all.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/templates.js"></script>
 
 
     <link
@@ -59,7 +64,7 @@
     >
       <h1 class="display-1">Contact Us</h1>
       <form
-        class="d-flex justify-content-center gap-5 flex-wrap col-sm-12 col-md-8"
+        class="d-flex justify-content-center gap-5 flex-wrap col-sm-12 col-md-8 form-group"
       >
         <div
           class="col-sm-12 col-md-5 d-flex justify-content-center align-items-start flex-column"
@@ -94,21 +99,21 @@
         </div>
 
         <div
-          class="col-10 d-flex justify-content-center align-items-start flex-column"
+          class="col-sm-12 col-md-10 d-flex justify-content-center align-items-start flex-column"
         >
           <label class="h6 fw-bold px-2" for="Telefono">Your message: </label>
-          <textarea class="col-12" name="messageArea" rows="5"></textarea>
+          <textarea class="form-control form-control-lg" name="messageArea" rows="5"></textarea>
         </div>
       
 
-      <div class="col-12 d-flex justify-content-around align-items-start">
+      <div class="col-12 d-flex justify-content-around align-items-start ">
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="Copy">
         <label class="h6 fw-bold form-check-label" for="Copy">Send me a copy</label>
         </div>
         
 
-        <input class="btn btn-lg btn-info text-light" type="submit" value="Send message">
+        <input class="btn btn-lg btn-info text-light boton" type="submit" value="Send message">
       </div>
     
     </form>

@@ -22,9 +22,15 @@ footer{
     height: 20vh;
 }
 
-input:not(.form-check-input), select{
+input:not(.form-check-input):not(.boton), select{
      border-radius: 30px !important;
      background-color: #4c6577 !important;
+     border: transparent !important;
+    color: #fff !important;
+}
+
+.boton{
+  border-radius: 30px !important;
      border: transparent !important;
     color: #fff !important;
 }
