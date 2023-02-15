@@ -39,6 +39,11 @@ function changeBorder() {
 
   const backgroundImage = document.querySelector('.background-image-blue');
   const aboutImage = document.querySelector('.about-image');
+  const footerList = document.querySelector('.footer-list');
+  const secondfooterList = document.querySelector('.second-footer-list');
+  const footerlogo = document.querySelector('.footer-logo');
+
+
 
   if (window.innerWidth < 576) {
     templateContainer.classList.remove('border-start');
@@ -58,6 +63,12 @@ function changeBorder() {
 
     backgroundImage.classList.remove('w-50');
     backgroundImage.classList.add('w-100');
+
+    footerList.classList.add('d-none');
+    secondfooterList.classList.add('d-none');
+
+    footerlogo.classList.remove('w-25');
+    footerlogo.classList.add('w-100');
   } else {
     templateContainer.classList.remove('border-top');
     templateContainer.classList.add('border-start');
@@ -77,6 +88,12 @@ function changeBorder() {
 
     backgroundImage.classList.add('w-50');
     backgroundImage.classList.remove('w-100');
+
+    footerList.classList.remove('d-none');
+    secondfooterList.classList.remove('d-none');
+
+    footerlogo.classList.add('w-25');
+    footerlogo.classList.remove('w-100');
   }
 }
 
