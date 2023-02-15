@@ -67,14 +67,14 @@
           class="col-sm-12 col-md-5 d-flex justify-content-center align-items-start flex-column"
         >
           <label class="h6 fw-bold px-2" for="Name">Nombre: </label>
-          <input class="form-control form-control-lg" type="Name" />
+          <input class="form-control form-control-lg" type="Name" required pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑ]+([\s.]+[a-zA-ZáéíóúÁÉÍÓÚñÑ]+)*$" title="Escriba una nombre válido, sin números ni caracteres especiales">
         </div>
 
         <div
           class="col-sm-12 col-md-5 d-flex justify-content-center align-items-start flex-column"
         >
           <label class="h6 fw-bold px-2" for="Correo">Correo: </label>
-          <input class="form-control form-control-lg" type="email" id="correo"">
+          <input class="form-control form-control-lg" type="email" id="correo" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Siga el formato [nombre]@[dominio].[2 caracteres min]">
         </div>
 
         <div
@@ -92,7 +92,7 @@
           class="col-sm-12 col-md-5 d-flex justify-content-center align-items-start flex-column"
         >
           <label class="h6 fw-bold px-2" for="Telefono">Telefono: </label>
-          <input class="form-control form-control-lg" type="tel" />
+          <input class="form-control form-control-lg" type="tel" required pattern="[0-9]{9}" maxlength="9">
         </div>
 
         <div
