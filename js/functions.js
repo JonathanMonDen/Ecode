@@ -32,7 +32,7 @@ const templateContainer = document.querySelector('.template-text-container');
 const aboutImage = document.getElementById('about-image');
 
 
-/*function changeBorder() {
+function changeBorder() {
   const firstH4 = templateContainer.querySelector('h4:first-child');
 
   if (window.innerWidth < 576) {
@@ -63,4 +63,4 @@ if (window.innerWidth < 576) {
   aboutImage.style.width = "100%";
 } else {
   aboutImage.style.width = "75%";
-}*/
+}
