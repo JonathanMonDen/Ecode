@@ -29,26 +29,54 @@ navbarItems.forEach(item => {
 
 
 const templateContainer = document.querySelector('.template-text-container');
-const aboutImage = document.getElementById('about-image');
+const secondtemplateContainer = document.querySelector('.second-template-text-container');
+
 
 
 function changeBorder() {
   const firstH4 = templateContainer.querySelector('h4:first-child');
+  const lastH4 = templateContainer.querySelector('h4:last-child');
+
+  const backgroundImage = document.querySelector('.background-image-blue');
+  const aboutImage = document.querySelector('.about-image');
 
   if (window.innerWidth < 576) {
     templateContainer.classList.remove('border-start');
     templateContainer.classList.add('border-top');
     templateContainer.classList.add("pt-5");
+
+    secondtemplateContainer.classList.remove('border-end');
+    secondtemplateContainer.classList.add('border-bottom');
+    secondtemplateContainer.classList.add("pb-5");
+
+
     firstH4.classList.add('mt-5');
+    lastH4.classList.add('mb-5');
+
     aboutImage.classList.remove('w-75');
     aboutImage.classList.add('w-100');
+
+    backgroundImage.classList.remove('w-50');
+    backgroundImage.classList.add('w-100');
   } else {
     templateContainer.classList.remove('border-top');
     templateContainer.classList.add('border-start');
     templateContainer.classList.remove("pt-5");
+
+    secondtemplateContainer.classList.add('border-end');
+    secondtemplateContainer.classList.remove('border-bottom');
+    secondtemplateContainer.classList.remove("pb-5");
+
+
     firstH4.classList.remove('mt-5');
+    lastH4.classList.remove('mb-5');
+
+
     aboutImage.classList.remove('w-100');
     aboutImage.classList.add('w-75');
+
+    backgroundImage.classList.add('w-50');
+    backgroundImage.classList.remove('w-100');
   }
 }
 
@@ -57,10 +85,3 @@ window.addEventListener('resize', changeBorder);
 
 // Llama a la función una vez para comprobar el tamaño de la ventana al cargar la página
 changeBorder();
-
-// Establece el ancho inicial de la imagen al cargar la página
-if (window.innerWidth < 576) {
-  aboutImage.style.width = "100%";
-} else {
-  aboutImage.style.width = "75%";
-}

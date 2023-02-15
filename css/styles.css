@@ -79,22 +79,6 @@
     height: 100vh !important;
   }
 
-  /*
-
-  @keyframes neon {
-    from {
-      box-shadow: 0 0 10px #0071BC, 0 0 20px #0071BC, 0 0 30px #0071BC, 0 0 40px #0071BC, 0 0 70px #0071BC, 0 0 80px #0071BC, 0 0 100px #0071BC, 0 0 150px #0071BC, 
-                  0 0 170px #0071BC, 0 0 200px #0071BC, 0 0 220px #0071BC, 0 0 250px #0071BC, 0 0 270px #0071BC;
-    }
-    to {
-      box-shadow: 0 0 270px #0071BC, 0 0 250px #0071BC, 0 0 220px #0071BC, 0 0 200px #0071BC, 0 0 170px #0071BC, 
-                  0 0 150px #0071BC, 0 0 100px #0071BC, 0 0 80px #0071BC, 0 0 70px #0071BC, 0 0 40px #0071BC, 
-                  0 0 30px #0071BC, 0 0 20px #0071BC, 0 0 10px #0071BC;
-    }
-  }
-
-  */
-  
   .bg-effect {
     background-color: #0071BC;
     filter: blur(200px) opacity(1);
@@ -131,4 +115,10 @@
     object-fit: cover;
   }
 
-  
+  .second-template-text-container{
+    z-index: 2;
+  }
+
+  .footer{
+    color: white;
+  }
