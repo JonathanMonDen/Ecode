@@ -1,4 +1,4 @@
-<img src="https://github.com/Kuranio/Ecode/blob/main/EcodeSVG.svg"/>
+<img src="https://github.com/Kuranio/Ecode/blob/main/images/EcodePNG.png"/>
 
 ## Welcome to Ecode ##
 
