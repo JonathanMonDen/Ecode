@@ -55,12 +55,11 @@ a{
     color: #fff !important;
 }
 
-a:hover{
+a:hover, .contacto{
     color: #009bbc !important;
 }
 
 a:last-child{
-    color: #009bbc !important;
     border-bottom: #009bbc !important;
 }
 
@@ -94,26 +93,20 @@ a:last-child{
     color: #009bbc !important;
   }
 
-  i{
-    font-size: 2em;
-  }
-
   nav{
     display: none;
   }
+  .texto{
+    font-size: 1.5em !important;
+  }
 
-  @media (min-width : 767px){
-    i{
-        font-size: 1em;
+  @media (min-width : 767px) and (max-width : 1024px){
+    .texto{
+      font-size: 0.9em !important;
     }
-<<<<<<< Updated upstream
-=======
     #mynavbar{
       backdrop-filter: blur(6px);
-      background-color: rgba(0, 0, 0, 0.301) !important;
     }
->>>>>>> Stashed changes
-
   }
 
   @media (min-width : 425px) and (max-width : 766px){
