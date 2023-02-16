@@ -57,7 +57,6 @@ const select = document.getElementById('desplegable');
       element.style.cursor = 'default';
     });
   });
-  console.log(iconos);
   
 
 

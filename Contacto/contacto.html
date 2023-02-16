@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="contacto.css" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="shortcut icon" type="img/jpg" href="/images/ESVG-03.svg">
 
     <script
       src="https://kit.fontawesome.com/ad4441e58a.js"
@@ -14,8 +15,8 @@
     ></script>
 
     <script src="/js/functions.js" defer></script>
-    <script src="/js/all.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/all.min.js" defer></script>
+    <script src="/js/bootstrap.min.js" defer></script>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -25,6 +26,8 @@
     />
   </head>
   <body class="text-light">
+
+    <!--Barra de navegacion-->
     <nav
       class="navbar navbar-dark navbar-expand-lg bg-transparent fixed-top"
       id="mynavbar"
@@ -110,7 +113,9 @@
         </div>
       </div>
     </nav>
+    <!--Fin de la Barrade navegacion-->
 
+    <!--Div central con el formulario : h1 form -> 5div-->
     <div
       class="col-12 d-flex justify-content-center flex-column pt-5 align-items-center formulario mt-5"
     >
@@ -176,7 +181,7 @@
         <div
           class="col-sm-12 col-md-10 d-flex justify-content-center align-items-start flex-column"
         >
-          <label class="h6 px-2" for="Telefono">Your Message: </label>
+          <label class="h6 px-2" for="Message">Your Message: </label>
           <textarea
             class="form-control form-control-lg"
             name="messageArea"
@@ -198,9 +203,11 @@
         </div>
       </form>
     </div>
+    <!--Fin del formulario-->
 
-    <hr class="border border-2 border-info"/>
+    <hr class="border border-2 border-info" />
 
+    <!--Inicio footer-->
     <footer class="col-12 justify-content-evenly align-items-center">
       <div class="col-5 d-flex justify-content-evenly">
         <a class="h4 underline left texto" href="#">Home</a>
@@ -233,10 +240,8 @@
         <li id="icon">
           <i class="fa-brands fa-instagram fa-2xl"></i>
         </li>
-        
-        
-        
       </div>
     </footer>
+    <!--Fin del footer-->
   </body>
 </html>

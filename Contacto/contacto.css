@@ -33,10 +33,6 @@ input:not(.form-check-input):not(.boton), select{
     color: #fff !important;
 }
 
-select::-ms-expand, select::-ms-value{
-  color: red;
-}
-
 .boton{
   border-radius: 30px !important;
      border: transparent !important;
@@ -105,9 +101,6 @@ a:last-child{
   }
 
   @media (min-width : 425px) and (max-width : 767px){
-    header{
-        display: none !important;
-    }
     footer{
       flex-direction: column;
     }
