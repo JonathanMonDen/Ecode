@@ -1,4 +1,8 @@
 body{  
+  background-image: url("../images/background.svg");
+  background-repeat: no-repeat;
+  background-position-y: 65%;
+  background-position-x: -5%;
     background-color: #000 !important;
     font-family: 'Roboto', sans-serif !important;
 }
@@ -19,6 +23,7 @@ header{
 footer{
     display: flex;
     height: 20vh;
+    margin-top: 5%;
 }
 
 #contenedor_precios_movil{
@@ -42,14 +47,14 @@ p{
 
 
 #precios{
-  height: 50vh;
+  height: 40vh;
     width: 28%;
     border-radius: 35px;
     border-style: solid;
 }
 
 #precios_popular{
-    height: 60vh;
+    height: 50vh;
     width: 28%;
     border-radius: 35px;
     border-color: #0071BC;
@@ -132,17 +137,12 @@ p{
 #img_final{
   border-radius: 35px;
   margin-left: 75vh;
-  margin-top: -40vh;
+  margin-top: -18%;
 }
 
 #contenedor_final{
   height: 70vh;
 }
-
-footer{
-  margin-top: 5%;
-}
-
 
 select::-ms-expand, select::-ms-value{
   color: red;
