@@ -1,4 +1,4 @@
-// Selecciona los elementos de la barra de navegación que quieres resaltar
+/*// Selecciona los elementos de la barra de navegación que quieres resaltar
 const navbarItems = document.querySelectorAll('.navbar-nav a');
 // Recorre los elementos y agrega un event listener para cada uno
 navbarItems.forEach(item => {
@@ -25,11 +25,40 @@ navbarItems.forEach(item => {
       item.classList.remove('text-info');
     }
   });
-});
+});*/
 
 
 const templateContainer = document.querySelector('.template-text-container');
 const aboutImage = document.getElementById('about-image');
+
+
+const select = document.getElementById('desplegable');
+  select.addEventListener('mouseover', function() {
+    select.style.cursor = 'pointer';
+  });
+  select.addEventListener('mouseout', function() {
+    select.style.cursor = 'default';
+  });
+
+  const inputCopy = document.getElementById('Copy');
+  inputCopy.addEventListener('mouseover', function() {
+    inputCopy.style.cursor = 'pointer';
+  });
+  inputCopy.addEventListener('mouseout', function() {
+    inputCopy.style.cursor = 'default';
+  });
+
+  const iconos = document.querySelectorAll('#icon');
+  iconos.forEach(element => {
+    element.addEventListener('mouseover', function() {
+      element.style.cursor = 'pointer';
+    });
+    element.addEventListener('mouseout', function() {
+      element.style.cursor = 'default';
+    });
+  });
+  console.log(iconos);
+  
 
 
 /*function changeBorder() {

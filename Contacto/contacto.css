@@ -50,9 +50,10 @@ textarea{
     border: transparent !important;
 }
 
-a{
+a, #icon{
     text-decoration: none !important;
     color: #fff !important;
+    list-style: none !important;
 }
 
 a:hover, .contacto{
@@ -89,27 +90,21 @@ a:last-child{
     transform-origin: left;
   }
 
-  hr{
-    color: #009bbc !important;
-  }
-
   nav{
     display: none;
   }
   .texto{
-    font-size: 1.5em !important;
+    font-size: 1.2em !important;
   }
 
-  @media (min-width : 767px) and (max-width : 1024px){
-    .texto{
-      font-size: 0.9em !important;
-    }
+  @media (min-width : 769px){
+    
     #mynavbar{
       backdrop-filter: blur(6px);
     }
   }
 
-  @media (min-width : 425px) and (max-width : 766px){
+  @media (min-width : 425px) and (max-width : 767px){
     header{
         display: none !important;
     }
