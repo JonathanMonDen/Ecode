@@ -26,3 +26,35 @@ navbarItems.forEach(item => {
     }
   });
 });
+
+
+
+function changeBorder() {
+  const footerList = document.querySelector('.footer-list');
+  const secondfooterList = document.querySelector('.second-footer-list');
+  const footerlogo = document.querySelector('.footer-logo');
+
+
+
+  if (window.innerWidth < 576) {
+   
+    footerList.classList.add('d-none');
+    secondfooterList.classList.add('d-none');
+
+    footerlogo.classList.remove('w-25');
+    footerlogo.classList.add('w-100');
+  } else {
+  
+    footerList.classList.remove('d-none');
+    secondfooterList.classList.remove('d-none');
+
+    footerlogo.classList.add('w-25');
+    footerlogo.classList.remove('w-100');
+  }
+}
+
+// Llama a la función cuando la ventana cambia de tamaño
+window.addEventListener('resize', changeBorder);
+
+// Llama a la función una vez para comprobar el tamaño de la ventana al cargar la página
+changeBorder();
