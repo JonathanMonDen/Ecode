@@ -1551,4 +1551,9 @@ left: -5%;
     }
   }
 
-
+  @media (min-width: 769px){
+    #mynavbar{
+    backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, 0.301) !important;
+  }
+  }
