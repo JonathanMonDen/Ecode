@@ -194,3 +194,14 @@
       width: 100% !important;
     }
   }
+
+  @media (max-width : 768px){
+    .choose-template{
+      margin-bottom: 20em;
+    }
+
+    .dont-display{
+      display: none !important;
+    }
+  }
+  
