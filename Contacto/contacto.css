@@ -106,6 +106,13 @@ a:last-child{
     i{
         font-size: 1em;
     }
+<<<<<<< Updated upstream
+=======
+    #mynavbar{
+      backdrop-filter: blur(6px);
+      background-color: rgba(0, 0, 0, 0.301) !important;
+    }
+>>>>>>> Stashed changes
 
   }
 
