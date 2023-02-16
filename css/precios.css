@@ -705,7 +705,7 @@ footer{
     }
 
     #texto_pagina1{
-      margin-top: 25%;
+      margin-top: 35%;
       padding: 10%;
   }
 
@@ -715,6 +715,10 @@ footer{
 
   #segundo_texto{
     font-size: 10px;
+  }
+
+  #pagina_precios{
+    margin-top: -10%;
   }
 
   #precios{
