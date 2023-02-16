@@ -102,3 +102,10 @@ window.addEventListener('resize', changeBorder);
 
 // Llama a la función una vez para comprobar el tamaño de la ventana al cargar la página
 changeBorder();
+
+// Establece el ancho inicial de la imagen al cargar la página
+if (window.innerWidth < 576) {
+  aboutImage.style.width = "100%";
+} else {
+  aboutImage.style.width = "75%";
+}

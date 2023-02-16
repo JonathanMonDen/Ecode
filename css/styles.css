@@ -106,6 +106,7 @@
     height: 100vh !important;
   }
 
+  
   .bg-effect {
     background-color: #0071BC;
     filter: blur(200px) opacity(1);
