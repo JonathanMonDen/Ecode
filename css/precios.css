@@ -22,9 +22,11 @@ header{
 }
 
 footer{
+  margin-top: 20%;
     display: flex;
     height: 20vh;
     margin-top: 5%;
+    color: white;
 }
 
 #contenedor_precios_movil{

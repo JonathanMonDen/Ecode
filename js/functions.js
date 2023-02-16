@@ -33,22 +33,26 @@ const aboutImage = document.getElementById('about-image');
 
 
 function changeBorder() {
-  const firstH4 = templateContainer.querySelector('h4:first-child');
+  const footerList = document.querySelector('.footer-list');
+  const secondfooterList = document.querySelector('.second-footer-list');
+  const footerlogo = document.querySelector('.footer-logo');
+
+
 
   if (window.innerWidth < 576) {
-    templateContainer.classList.remove('border-start');
-    templateContainer.classList.add('border-top');
-    templateContainer.classList.add("pt-5");
-    firstH4.classList.add('mt-5');
-    aboutImage.classList.remove('w-75');
-    aboutImage.classList.add('w-100');
+   
+    footerList.classList.add('d-none');
+    secondfooterList.classList.add('d-none');
+
+    footerlogo.classList.remove('w-25');
+    footerlogo.classList.add('w-100');
   } else {
-    templateContainer.classList.remove('border-top');
-    templateContainer.classList.add('border-start');
-    templateContainer.classList.remove("pt-5");
-    firstH4.classList.remove('mt-5');
-    aboutImage.classList.remove('w-100');
-    aboutImage.classList.add('w-75');
+  
+    footerList.classList.remove('d-none');
+    secondfooterList.classList.remove('d-none');
+
+    footerlogo.classList.add('w-25');
+    footerlogo.classList.remove('w-100');
   }
 }
 
