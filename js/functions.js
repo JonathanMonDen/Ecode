@@ -78,6 +78,11 @@ const select = document.getElementById('desplegable');
 
 
   function changeBorder() {
+    const firstH4 = templateContainer.querySelector('h4:first-child');
+    const lastH4 = templateContainer.querySelector('h4:last-child');
+  
+    const backgroundImage = document.querySelector('.background-image-blue');
+    const aboutImage = document.querySelector('.about-image');
     const footerList = document.querySelector('.footer-list');
     const secondfooterList = document.querySelector('.second-footer-list');
     const footerlogo = document.querySelector('.footer-logo');
@@ -85,14 +90,49 @@ const select = document.getElementById('desplegable');
   
   
     if (window.innerWidth < 576) {
-     
+      templateContainer.classList.remove('border-start');
+      templateContainer.classList.add('border-top');
+      templateContainer.classList.add("pt-5");
+  
+      secondtemplateContainer.classList.remove('border-end');
+      secondtemplateContainer.classList.add('border-bottom');
+      secondtemplateContainer.classList.add("pb-5");
+  
+  
+      firstH4.classList.add('mt-5');
+      lastH4.classList.add('mb-5');
+  
+      aboutImage.classList.remove('w-75');
+      aboutImage.classList.add('w-100');
+  
+      backgroundImage.classList.remove('w-50');
+      backgroundImage.classList.add('w-100');
+  
       footerList.classList.add('d-none');
       secondfooterList.classList.add('d-none');
   
       footerlogo.classList.remove('w-25');
       footerlogo.classList.add('w-100');
     } else {
-    
+      templateContainer.classList.remove('border-top');
+      templateContainer.classList.add('border-start');
+      templateContainer.classList.remove("pt-5");
+  
+      secondtemplateContainer.classList.add('border-end');
+      secondtemplateContainer.classList.remove('border-bottom');
+      secondtemplateContainer.classList.remove("pb-5");
+  
+  
+      firstH4.classList.remove('mt-5');
+      lastH4.classList.remove('mb-5');
+  
+  
+      aboutImage.classList.remove('w-100');
+      aboutImage.classList.add('w-75');
+  
+      backgroundImage.classList.add('w-50');
+      backgroundImage.classList.remove('w-100');
+  
       footerList.classList.remove('d-none');
       secondfooterList.classList.remove('d-none');
   

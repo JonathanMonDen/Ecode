@@ -173,6 +173,14 @@
     color: white;
   }
 
+  .row-choose{
+    z-index: 5;
+  }
+
+  .choose-template{
+    height: 100vh;
+  }
+
   @media (min-width : 425px) and (max-width : 768px){
     .footer-list{
       display: none;
