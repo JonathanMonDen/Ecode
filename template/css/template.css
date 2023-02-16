@@ -175,4 +175,50 @@ hr {
     z-index: 1;
     transform: scale(1)
 }
+.cont2{
+  display: none;
+}
+.azul2{
+  display: none;
+}
+.slidersicon{
+  display: none;
+}
+@media (min-width : 425px) and (max-width : 768px){
+  select, input,option{
+    font-size: small !important;
+  }
 
+  foto{
+    height: 150px;
+  }
+  
+}
+@media (max-width :426px){
+  .cont1{
+    display: none;
+  }
+  .cont2{
+    display: flex;
+  }
+  .azul2{
+    display: block;
+    top: 1500px;
+    right: 50px;
+  }
+  .settings1{
+    display: none !important;
+  }
+  .settings2{
+    display: flex;
+  }
+  .slidersicon{
+    display: block;
+  }
+}
+@media (min-width: 769px){
+  #mynavbar{
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.301) !important;
+}
+}
