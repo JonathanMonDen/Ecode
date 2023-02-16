@@ -13,33 +13,26 @@
     <script src="https://kit.fontawesome.com/ad4441e58a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-    
-    <script src="/js/functions.js"></script>
-    <script src="/js/all.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   </head>
   <body class="bg-black">
     <!--Nav bar-->
     <nav class="navbar navbar-dark navbar-expand-lg bg-transparent fixed-top" id="mynavbar">
       <div class="container-fluid">
-          <a class="navbar-brand d-none d-sm-block w-75 ms-3" href="#">
+          <a class="navbar-brand d-none d-lg-block d-sm-none w-75 ms-3" href="#">
             <img src="images/EcodePNG.png" class="img-fluid" width="20%" alt="ecode">
           </a>
-          <a class="position-fixed me-4 end-0 slidersicon" href="#">
-            <span class="bi bi-sliders fa-2x text-info"></span>
-          </a>
-          <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+
+          <button class="navbar-toggler border-0 mt-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <img src="images/E100x150.png" alt="Hamburguesa">
           </button>
-          <div class="offcanvas offcanvas-start bg-dark d-flex flex-column justify-content-center align-items-center text-center" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+          <button class="navbar-toggler border-0 mt-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+            <i class="fa-solid fa-sliders fa-lg text-info"></i>
+          </button>
+
+          
+          <div class="offcanvas offcanvas-start bg-dark d-flex flex-column justify-content-center align-items-center text-center z-5" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
               <button type="button" class="btn me-4" data-bs-dismiss="offcanvas" aria-label="Close">
                 <img src="images/EcodePNG.png" class="img-fluid" width="70%" alt="ecode">
@@ -66,11 +59,54 @@
                   <a class="nav-link underline left" href="#">CONTACT</a>
                 </li>
                 <li class="nav-item d-sm-none mt-5" data-bs-dismiss="offcanvas" aria-label="Close">
-                  <i class="fa-solid fa-chevron-left"></i>
+                  <i class="fa-solid fa-chevron-left text-info fa-lg"></i>
                 </li>
               </ul>
             </div>
           </div>
+
+          <div class="offcanvas offcanvas-end bg-dark d-flex flex-column justify-content-center align-items-center text-center d-block d-sm-none" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn me-4" data-bs-dismiss="offcanvas" aria-label="Close">
+                <img src="images/EcodePNG.png" class="img-fluid" width="70%" alt="ecode">
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 me-3">
+                <li class="nav-item mb-5">
+                  <select class="form-select form-select-lg" id="desplegable" name="desplegable">
+                    <option value="opcion1">Free templates</option>
+                    <option value="opcion2">Opción 2</option>
+                    <option value="opcion3">Opción 3</option>
+                  </select>
+                </li>
+                <li class="nav-item mb-5 mt-4">
+                  <select class="form-select form-select-lg" id="desplegable" name="desplegable">
+                    <option value="opcion1">Premium templates</option>
+                    <option value="opcion2">Opción 2</option>
+                    <option value="opcion3">Opción 2</option>
+                  </select>
+                </li>
+                <li class="nav-item mb-5 mt-4">
+                  <select class="form-select form-select-lg" id="desplegable" name="desplegable">
+                    <option value="opcion1">Choose your color</option>
+                    <option value="opcion2">White</option>
+                    <option value="opcion3">Black</option>
+                    <option value="opcion3">Yellow</option>
+                    <option value="opcion3">Red</option>
+                    <option value="opcion3">Blue</option>
+                  </select>
+                </li>
+                <li class="nav-item mb-5 mt-4">
+                  <input type="text" class="form-control" placeholder="  &#xF002; Search" style="font-family:Arial, FontAwesome">
+                </li>
+                <li class="nav-item d-sm-none mt-5" data-bs-dismiss="offcanvas" aria-label="Close">
+                  <i class="fa-solid fa-chevron-right fa-lg text-info"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+
         </div>
       </nav>
     <!--Nav bar-->
@@ -78,7 +114,7 @@
       <!--Content-->
     <div class="content p-5 d-flex flex-column">
       <!--Settings-->
-      <div class="row-3 d-lg-flex d-md-flex flex-row pl-5 pt-5 pr-5 m-4 justify-items-center settings1">
+      <div class="d-none d-sm-none d-lg-block row-3 d-lg-flex d-md-flex flex-row pl-5 pt-5 pr-5 m-4 justify-items-center settings1">
         <div
           class="col-lg-2 d-flex m-md-1 m-lg-auto"
         >
@@ -119,48 +155,6 @@
       </div>
       <!--Settings-->
 
-<!--Settings2-->
-<div class="row-3 d-lg-none d-md-none d-sm-flex flex-column  justify-items-center settings2">
-  
-  <div
-    class="col-lg-2 d-flex m-2"
-  >
-    <select class="form-select form-select-lg" id="desplegable" name="desplegable">
-      <option value="opcion1">Free templates</option>
-      <option value="opcion2">Opción 2</option>
-      <option value="opcion3">Opción 3</option>
-    </select>
-  </div>
-
-  <div
-    class="col-lg-2 d-flex m-2"
-  >
-    <select class="form-select form-select-lg" id="desplegable" name="desplegable">
-      <option value="opcion1">Premium templates</option>
-      <option value="opcion2">Opción 2</option>
-      <option value="opcion3">Opción 2</option>
-    </select>
-  </div>
-
-  <div
-    class="col-lg-2 d-flex m-2"
-  >
-    <select class="form-select form-select-lg" id="desplegable" name="desplegable">
-      <option value="opcion1">Choose your color</option>
-      <option value="opcion2">White</option>
-      <option value="opcion3">Black</option>
-      <option value="opcion3">Yellow</option>
-      <option value="opcion3">Red</option>
-      <option value="opcion3">Blue</option>
-    </select>
-  </div>
-
-  <div class="col-lg-2 d-flex m-2">
-    <input type="text" class="form-control" placeholder="  &#xF002; Search" style="font-family:Arial, FontAwesome">
-  </div>      
-
-</div>
-<!--Settings2-->
       <hr class="border border-3 border-info opacity-100 d-flex px-5">
 
       <!--Gallery-->
@@ -249,5 +243,11 @@
 
     <!--Footer-->
     <!--Footer-->
+
+    <script src="/js/functions.js"></script>
+    <script src="/js/all.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
   </body>
   </html>
