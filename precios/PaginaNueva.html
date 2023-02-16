@@ -21,7 +21,7 @@
       crossorigin="anonymous"
     />
 </head>
-<body class="bg-dark">
+<body class="">
 
 <!--En tabletas y ordenador ocultar este elemento, hacer responsive para que se vea como en contacto.html-->
     <nav class="d-sm-none navbar navbar-expand-lg bg-transparent">
@@ -62,8 +62,7 @@
       <div id="fondo1" class="m-0 vh-100 row justify-content-center">
         <div id="pagina1">
           <div id="texto_pagina1" class="text-center">
-            <h1 class="display-2 fw-normal text-white"><mark class="azul">/</mark>Start your 
-              <mark class="azul">free</mark>trial now</h1>
+            <h1 class="display-3 fw-normal text-white"><mark class="azul">/</mark>Start your <mark class="azul">free</mark>trial now</h1>
             <p class="mt-4">We offer customizable HTML web templates to make creating your website a quick and easy task.<br>
               We design quality templates with a wide range of options to fit your budget.
             </p> 
@@ -103,6 +102,60 @@
         </div>
       </div>
 
+      <div class="container">
+        <div class="cards-wrapper">
+            <ul class="cards__container">
+                <li class="box justify-content-center">
+                    <div id="precios" class="text-center">
+                        <h3 class="mt-4">Hobby</h3>
+                        <h2 >$79<mark class="mes">/month</mark></h2>
+                        <p id="primer_texto" class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                        <p id="segundo_texto" class="text-dark">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                        <p id="segundo_texto" class="text-dark">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                        <button class="boton_precios">Start your trial</button>
+                    </div>
+                </li>
+                <li class="box justify-content-center">
+                    <div id="popular">Most popular</div>
+                    <div id="precios_popular" class="text-center bg-white">
+                        <h3 class="mt-2">Growth</h3>
+                        <h2>$149<mark class="mes">/month</mark></h2>
+                        <p id="primer_texto" class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                        <p id="segundo_texto" class="text-dark">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                        <p id="segundo_texto" class="text-dark">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                        <p id="segundo_texto" class="text-dark">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                        <button class="boton_precios">Start your trial</button>
+                      </div>
+                </li>
+                <li class="box justify-content-center">
+                  <div id="precios" class="text-center">
+                    <h3 class="mt-4">Scale</h3>
+                    <h2 class="mt-4">$349<mark class="mes">/month</mark></h2>
+                    <p id="primer_texto" class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p id="segundo_texto" class="text-dark">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                    <p id="segundo_texto" class="text-dark">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                    <button class="boton_precios">Start your trial</button>
+                  </div>
+              </li>
+            </ul>
+        </div>
+        <div class="button" onclick="shiftRight()"><img src="https://image.ibb.co/dfPSw7/right_arrow.png" alt=""></div>
+    </div>
+
+      <div id="contenedor_final" class="row justify-content-center">
+        <div id="linea_azul"></div>
+        <div id="pagina2" class="justify-content-center">
+          <div id="div_final" class="col-sm-4">
+            <h1 id="h1_final" class="display-3 fw-normal text-white">Flexible options for larger businesses</h1>
+            <p id="p_final">We offer high quality solutions for the needs of large companies</p>
+            <button class="boton_info">More info</button>  
+          </div>
+          <div id="imagen_final" class="col text-center">
+            <img id="img_final"  src="../images/oneImage2.jpeg" alt="">
+          </div>
+        </div>
+      </div>    
+
 <!--Aplicar estilos al css del footer para dejarlo como en contacto.html, buscar la forma de que se vean los iconos y el responsive-->
       <footer class="col-12 justify-content-evenly align-items-center ">
         <div class="col-5 d-flex justify-content-evenly texto">
@@ -125,6 +178,7 @@
       </div>
     
     </footer>
+    <script src='app.js'></script>
 </body>
 </html>
 
