@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{  
+    background-color: #000 !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+
+
+.logo{
+    height: 100%;
+}
+
+header{
+    display: flex;
+    height: 10vh;
+}
+
+.formulario{
+    background: linear-gradient(0.5turn, #000, #0b3a5c, #000);
+}
+
+footer{
+    display: flex;
+    height: 20vh;
+}
+
+input:not(.form-check-input):not(.boton), select{
+     border-radius: 30px !important;
+     background-color: #4c6577 !important;
+     border: transparent !important;
+    color: #fff !important;
+}
+
+.boton{
+  border-radius: 30px !important;
+     border: transparent !important;
+    color: #fff !important;
+}
+
+textarea{
+    border-radius: 30px !important;
+    resize: none !important;
+    background-color: #4c6577 !important;
+    border: transparent !important;
+}
+
+a, #icon{
+    text-decoration: none !important;
+    color: #fff !important;
+    list-style: none !important;
+}
+
+a:hover, .contacto{
+    color: #009bbc !important;
+}
+
+a:last-child{
+    border-bottom: #009bbc !important;
+}
+
+.underline {
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .underline::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in;
+  }
+  
+  .underline:hover::after {
+    color: #009bbc;
+    transform: scaleX(1);
+  }
+  
+  .underline.left:hover::after{
+    transform-origin: left;
+  }
+
+  nav{
+    display: none;
+  }
+  .texto{
+    font-size: 1.2em !important;
+  }
+
+  @media (min-width : 769px){
+    
+    #mynavbar{
+      backdrop-filter: blur(6px);
+    }
+  }
+
+  @media (min-width : 425px) and (max-width : 767px){
+    footer{
+      flex-direction: column;
+    }
+    footer a{
+      display: none;
+    }
+    footer div i{
+      column-gap: 5vw !important;
+      padding: 2vh !important;
+      padding-bottom: 5vh !important;
+    }
+    hr{
+        margin-top: 10vh !important;
+    }
+    nav{
+      display: flex;
+    }
+
+    select{
+      width: 60vw !important;
+    }
+  }
+  .footer{
+    color: white;
+  }
+  
+  @media (min-width : 425px) and (max-width : 768px){
+    .footer-list{
+      display: none;
+    }
+  
+    .second-footer-list{
+      display: none;
+    }
+  
+    .footer-logo{
+      width: 100% !important;
+    }
+  }
