@@ -10,8 +10,9 @@
 
     <script src="https://kit.fontawesome.com/ad4441e58a.js" crossorigin="anonymous"></script>
     
-    <script src="/js/all.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="../js/functions.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="style_cambios.css">
     <link
@@ -24,40 +25,53 @@
 <body class="">
 
 <!--En tabletas y ordenador ocultar este elemento, hacer responsive para que se vea como en contacto.html-->
-    <nav class="d-sm-none navbar navbar-expand-lg bg-transparent">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            <img src="../images/ESVG-03.svg" alt="Ecode">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-transparent fixed-top" id="mynavbar">
+      <div class="container-fluid">
+          <a class="navbar-brand d-none d-sm-block w-75 ms-3" href="#">
+            <img src="../images/EcodePNG.png" class="img-fluid" width="20%" alt="ecode">
+          </a>
+          <a class="position-fixed me-4 end-0 slidersicon" href="#">
+            <span class="bi bi-sliders fa-2x text-info"></span>
+          </a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <img src="../images/E100x150.png" alt="Hamburguesa">
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" href="../Home/home.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../Templates/templates.html">Templates</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../Pricing/pricing.html">Pricing</a>
-              </li>
-            </ul>
+          <div class="offcanvas offcanvas-start bg-dark d-flex flex-column justify-content-center align-items-center text-center" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn me-4" data-bs-dismiss="offcanvas" aria-label="Close">
+                <img src="images/EcodePNG.png" class="img-fluid" width="70%" alt="ecode">
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 me-3">
+                <li id="li_hamburguesa" class="nav-item">
+                  <a class="nav-link mt-4 underline left" aria-current="page" href="#">HOME</a>
+                </li>
+                <li id="li_hamburguesa" class="nav-item mt-4">
+                  <a class="nav-link underline left" href="#">TEMPLATES</a>
+                </li>
+                <li id="li_hamburguesa" class="nav-item mt-4">
+                  <a class="nav-link  underline left" href="#">ABOUT</a>
+                </li>
+                <li id="li_hamburguesa" class="nav-item mt-4">
+                  <a class="nav-link underline left" href="#">WORK</a>
+                </li>
+                <li id="li_hamburguesa" class="nav-item mt-4">
+                  <a class="nav-link underline left" id="selected" href="#">PRICING</a>
+                </li>
+                <li id="li_hamburguesa" class="nav-item mt-4">
+                  <a class="nav-link underline left" href="#">CONTACT</a>
+                </li>
+                <li id="li_hamburguesa" class="nav-item d-sm-none mt-5" data-bs-dismiss="offcanvas" aria-label="Close">
+                  <i class="fa-solid fa-chevron-left"></i>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
 
 <!--En moviles ocultar este elemento y hacer que se vea como en contacto.html-->
-      <header class="col-12 justify-content-between align-items-center ">
-        <div class="col-8-lg col-5-md mx-3 mt-3">
-          <img class="col-5-lg col-6-md logo" src="../images/EcodeSVG.svg" alt="Ecode" />
-        </div>
-        <div class="col-4-lg col-5-md d-flex justify-content-evenly gap-4 mx-5 mt-3">
-          <a class="h5 fw-bold underline left" href="#">Home</a>
-          <a  class="h5 fw-bold underline left" href="#">Templates</a>
-          <a  class="h5 fw-bold underline left" href="#">Pricing</a>
-          <a  class="h5 fw-bold underline left" href="#">Contact</a>
-        </div>
-      </header>
 
       <div id="fondo1" class="m-0 vh-100 row justify-content-center">
         <div id="pagina1">
@@ -75,7 +89,7 @@
         <div id="contenedor_precios" class="row justify-content-center">
           <div id="precios" class="col-sm-4 text-center bg-white mt-4">
             <h3 class="mt-4">Hobby</h3>
-            <h2 class="mt-4">$79<mark class="mes">/month</mark></h2>
+            <h2 id="h2">$79<mark class="mes">/month</mark></h2>
             <p id="primer_texto" class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
             <p id="segundo_texto" class="text-dark">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
             <p id="segundo_texto" class="text-dark">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
@@ -84,7 +98,7 @@
           <div id="precios_popular" class="col-sm-4 text-center bg-white mt-4">
             <div id="popular" class="position-absolute">Most popular</div>
             <h3 class="mt-4">GROWTH</h3>
-            <h2 class="mt-4">$149<mark class="mes">/month</mark></h2>
+            <h2 id="h2">$149<mark class="mes">/month</mark></h2>
             <p id="primer_texto" class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
             <p id="segundo_texto" class="text-dark">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
             <p id="segundo_texto" class="text-dark">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
@@ -93,7 +107,7 @@
           </div>
           <div id="precios" class="col-sm-4 text-center bg-white mt-4">
             <h3 class="mt-4">Scale</h3>
-            <h2 class="mt-4">$349<mark class="mes">/month</mark></h2>
+            <h2 id="h2">$349<mark class="mes">/month</mark></h2>
             <p id="primer_texto" class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
             <p id="segundo_texto" class="text-dark">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
             <p id="segundo_texto" class="text-dark">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
@@ -103,7 +117,7 @@
       </div>
 
       <div class="container">
-        <div class="cards-wrapper">
+        <div id="carrousel_cartas" class="cards-wrapper">
             <ul class="cards__container">
                 <li class="box justify-content-center">
                     <div id="precios" class="text-center">
@@ -139,7 +153,7 @@
               </li>
             </ul>
         </div>
-        <div class="button" onclick="shiftRight()"><img src="https://image.ibb.co/dfPSw7/right_arrow.png" alt=""></div>
+        <div id="boton_carrusel" class="button" onclick="shiftRight()"><i id="flecha_carrusel" class="fa-solid fa-chevron-right fa-2xl"></i></div>
     </div>
 
       <div id="contenedor_final" class="row justify-content-center">
